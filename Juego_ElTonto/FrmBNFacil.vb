@@ -20,9 +20,12 @@ Public Class FrmBNFacil
         End If
     End Sub
 
-
-
-    Private Sub btnAtacar_Click(sender As Object, e As EventArgs) Handles btnJugar.Click
+    Private Sub btnJugar_Click(sender As Object, e As EventArgs) Handles btnJugar.Click
         tiempoFac.Start()
+        grpCartas.Visible = True
+    End Sub
+
+    Private Sub btnParejas_Click(sender As Object, e As EventArgs) Handles btnParejas.Click
+        grpTomarCarta.Visible = True
     End Sub
 End Class
