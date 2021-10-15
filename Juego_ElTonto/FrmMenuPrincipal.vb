@@ -31,4 +31,14 @@
     Private Sub InstrucccionesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InstrucccionesToolStripMenuItem.Click
         frmInstrucciones.Show()
     End Sub
+
+    Private Sub JuegoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles JuegoToolStripMenuItem.Click
+        Dim juego As String
+
+
+    End Sub
+
+    Private Sub FrmMenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
