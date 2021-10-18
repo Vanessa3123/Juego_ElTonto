@@ -47,6 +47,11 @@ Partial Class FrmBNFacil
         Me.grpTomarCarta = New System.Windows.Forms.GroupBox()
         Me.bntTomarCarta = New System.Windows.Forms.Button()
         Me.grpCartas = New System.Windows.Forms.GroupBox()
+        Me.lblInfoNumeros2 = New System.Windows.Forms.Label()
+        Me.lblInfoNumeros1 = New System.Windows.Forms.Label()
+        Me.picTonto = New System.Windows.Forms.PictureBox()
+        Me.btnVerTonto = New System.Windows.Forms.Button()
+        Me.lblNumTonto = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.pic1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,6 +64,7 @@ Partial Class FrmBNFacil
         CType(Me.pic10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpTomarCarta.SuspendLayout()
         Me.grpCartas.SuspendLayout()
+        CType(Me.picTonto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -67,20 +73,20 @@ Partial Class FrmBNFacil
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GuardarToolStripMenuItem, Me.MejoresTiemposToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1487, 30)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1487, 28)
         Me.MenuStrip1.TabIndex = 374
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'GuardarToolStripMenuItem
         '
         Me.GuardarToolStripMenuItem.Name = "GuardarToolStripMenuItem"
-        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(76, 24)
+        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(76, 26)
         Me.GuardarToolStripMenuItem.Text = "Guardar"
         '
         'MejoresTiemposToolStripMenuItem
         '
         Me.MejoresTiemposToolStripMenuItem.Name = "MejoresTiemposToolStripMenuItem"
-        Me.MejoresTiemposToolStripMenuItem.Size = New System.Drawing.Size(137, 24)
+        Me.MejoresTiemposToolStripMenuItem.Size = New System.Drawing.Size(137, 26)
         Me.MejoresTiemposToolStripMenuItem.Text = "Mejores Tiempos"
         '
         'tiempoFac
@@ -161,6 +167,7 @@ Partial Class FrmBNFacil
         Me.pic1.Location = New System.Drawing.Point(24, 21)
         Me.pic1.Name = "pic1"
         Me.pic1.Size = New System.Drawing.Size(182, 172)
+        Me.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic1.TabIndex = 1010
         Me.pic1.TabStop = False
         '
@@ -169,6 +176,7 @@ Partial Class FrmBNFacil
         Me.pic2.Location = New System.Drawing.Point(259, 21)
         Me.pic2.Name = "pic2"
         Me.pic2.Size = New System.Drawing.Size(182, 172)
+        Me.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic2.TabIndex = 1011
         Me.pic2.TabStop = False
         '
@@ -177,6 +185,7 @@ Partial Class FrmBNFacil
         Me.pic3.Location = New System.Drawing.Point(510, 21)
         Me.pic3.Name = "pic3"
         Me.pic3.Size = New System.Drawing.Size(182, 172)
+        Me.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic3.TabIndex = 1012
         Me.pic3.TabStop = False
         '
@@ -185,6 +194,7 @@ Partial Class FrmBNFacil
         Me.pic4.Location = New System.Drawing.Point(761, 21)
         Me.pic4.Name = "pic4"
         Me.pic4.Size = New System.Drawing.Size(182, 172)
+        Me.pic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic4.TabIndex = 1013
         Me.pic4.TabStop = False
         '
@@ -193,6 +203,7 @@ Partial Class FrmBNFacil
         Me.pic5.Location = New System.Drawing.Point(24, 244)
         Me.pic5.Name = "pic5"
         Me.pic5.Size = New System.Drawing.Size(182, 172)
+        Me.pic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic5.TabIndex = 1014
         Me.pic5.TabStop = False
         '
@@ -201,6 +212,7 @@ Partial Class FrmBNFacil
         Me.pic6.Location = New System.Drawing.Point(259, 244)
         Me.pic6.Name = "pic6"
         Me.pic6.Size = New System.Drawing.Size(182, 172)
+        Me.pic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic6.TabIndex = 1015
         Me.pic6.TabStop = False
         '
@@ -209,6 +221,7 @@ Partial Class FrmBNFacil
         Me.pic7.Location = New System.Drawing.Point(510, 244)
         Me.pic7.Name = "pic7"
         Me.pic7.Size = New System.Drawing.Size(182, 172)
+        Me.pic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic7.TabIndex = 1016
         Me.pic7.TabStop = False
         '
@@ -217,6 +230,7 @@ Partial Class FrmBNFacil
         Me.pic8.Location = New System.Drawing.Point(761, 244)
         Me.pic8.Name = "pic8"
         Me.pic8.Size = New System.Drawing.Size(182, 172)
+        Me.pic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic8.TabIndex = 1017
         Me.pic8.TabStop = False
         '
@@ -225,26 +239,28 @@ Partial Class FrmBNFacil
         Me.btnRevolverCartas.BackColor = System.Drawing.Color.Brown
         Me.btnRevolverCartas.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRevolverCartas.ForeColor = System.Drawing.Color.White
-        Me.btnRevolverCartas.Location = New System.Drawing.Point(1093, 527)
+        Me.btnRevolverCartas.Location = New System.Drawing.Point(175, 647)
         Me.btnRevolverCartas.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRevolverCartas.Name = "btnRevolverCartas"
         Me.btnRevolverCartas.Size = New System.Drawing.Size(214, 70)
         Me.btnRevolverCartas.TabIndex = 1018
         Me.btnRevolverCartas.Text = "Revolver Cartas"
         Me.btnRevolverCartas.UseVisualStyleBackColor = False
+        Me.btnRevolverCartas.Visible = False
         '
         'btnParejas
         '
         Me.btnParejas.BackColor = System.Drawing.Color.Brown
         Me.btnParejas.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnParejas.ForeColor = System.Drawing.Color.White
-        Me.btnParejas.Location = New System.Drawing.Point(372, 442)
+        Me.btnParejas.Location = New System.Drawing.Point(512, 663)
         Me.btnParejas.Margin = New System.Windows.Forms.Padding(4)
         Me.btnParejas.Name = "btnParejas"
         Me.btnParejas.Size = New System.Drawing.Size(214, 54)
         Me.btnParejas.TabIndex = 1019
         Me.btnParejas.Text = "Hacer Parejas"
         Me.btnParejas.UseVisualStyleBackColor = False
+        Me.btnParejas.Visible = False
         '
         'pic10
         '
@@ -277,14 +293,15 @@ Partial Class FrmBNFacil
         Me.bntTomarCarta.Name = "bntTomarCarta"
         Me.bntTomarCarta.Size = New System.Drawing.Size(187, 49)
         Me.bntTomarCarta.TabIndex = 1022
-        Me.bntTomarCarta.Text = "Revolver Cartas"
+        Me.bntTomarCarta.Text = "Tomar Carta"
         Me.bntTomarCarta.UseVisualStyleBackColor = False
         '
         'grpCartas
         '
+        Me.grpCartas.Controls.Add(Me.lblInfoNumeros2)
+        Me.grpCartas.Controls.Add(Me.lblInfoNumeros1)
         Me.grpCartas.Controls.Add(Me.pic8)
         Me.grpCartas.Controls.Add(Me.pic7)
-        Me.grpCartas.Controls.Add(Me.btnParejas)
         Me.grpCartas.Controls.Add(Me.pic6)
         Me.grpCartas.Controls.Add(Me.pic5)
         Me.grpCartas.Controls.Add(Me.pic4)
@@ -294,22 +311,76 @@ Partial Class FrmBNFacil
         Me.grpCartas.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpCartas.Location = New System.Drawing.Point(2, 181)
         Me.grpCartas.Name = "grpCartas"
-        Me.grpCartas.Size = New System.Drawing.Size(974, 503)
+        Me.grpCartas.Size = New System.Drawing.Size(974, 459)
         Me.grpCartas.TabIndex = 1022
         Me.grpCartas.TabStop = False
         Me.grpCartas.Text = "Cartas"
         Me.grpCartas.Visible = False
+        '
+        'lblInfoNumeros2
+        '
+        Me.lblInfoNumeros2.AutoSize = True
+        Me.lblInfoNumeros2.Location = New System.Drawing.Point(34, 428)
+        Me.lblInfoNumeros2.Name = "lblInfoNumeros2"
+        Me.lblInfoNumeros2.Size = New System.Drawing.Size(14, 23)
+        Me.lblInfoNumeros2.TabIndex = 1021
+        Me.lblInfoNumeros2.Text = "."
+        '
+        'lblInfoNumeros1
+        '
+        Me.lblInfoNumeros1.AutoSize = True
+        Me.lblInfoNumeros1.Location = New System.Drawing.Point(36, 206)
+        Me.lblInfoNumeros1.Name = "lblInfoNumeros1"
+        Me.lblInfoNumeros1.Size = New System.Drawing.Size(14, 23)
+        Me.lblInfoNumeros1.TabIndex = 1020
+        Me.lblInfoNumeros1.Text = "."
+        '
+        'picTonto
+        '
+        Me.picTonto.Image = Global.Juego_ElTonto.My.Resources.Resources.a_0
+        Me.picTonto.Location = New System.Drawing.Point(1110, 483)
+        Me.picTonto.Name = "picTonto"
+        Me.picTonto.Size = New System.Drawing.Size(195, 114)
+        Me.picTonto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picTonto.TabIndex = 1023
+        Me.picTonto.TabStop = False
+        '
+        'btnVerTonto
+        '
+        Me.btnVerTonto.BackColor = System.Drawing.Color.Brown
+        Me.btnVerTonto.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVerTonto.ForeColor = System.Drawing.Color.White
+        Me.btnVerTonto.Location = New System.Drawing.Point(1118, 604)
+        Me.btnVerTonto.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnVerTonto.Name = "btnVerTonto"
+        Me.btnVerTonto.Size = New System.Drawing.Size(187, 49)
+        Me.btnVerTonto.TabIndex = 1024
+        Me.btnVerTonto.Text = "Ver Carta Tonto"
+        Me.btnVerTonto.UseVisualStyleBackColor = False
+        '
+        'lblNumTonto
+        '
+        Me.lblNumTonto.AutoSize = True
+        Me.lblNumTonto.Location = New System.Drawing.Point(1115, 460)
+        Me.lblNumTonto.Name = "lblNumTonto"
+        Me.lblNumTonto.Size = New System.Drawing.Size(20, 17)
+        Me.lblNumTonto.TabIndex = 1025
+        Me.lblNumTonto.Text = "..."
         '
         'FrmBNFacil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1487, 714)
+        Me.ClientSize = New System.Drawing.Size(1487, 730)
+        Me.Controls.Add(Me.lblNumTonto)
+        Me.Controls.Add(Me.btnVerTonto)
+        Me.Controls.Add(Me.picTonto)
         Me.Controls.Add(Me.grpCartas)
         Me.Controls.Add(Me.grpTomarCarta)
         Me.Controls.Add(Me.btnRevolverCartas)
         Me.Controls.Add(Me.btnstop)
+        Me.Controls.Add(Me.btnParejas)
         Me.Controls.Add(Me.txtcontador)
         Me.Controls.Add(Me.btnJugar)
         Me.Controls.Add(Me.lblMin)
@@ -332,6 +403,8 @@ Partial Class FrmBNFacil
         CType(Me.pic10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpTomarCarta.ResumeLayout(False)
         Me.grpCartas.ResumeLayout(False)
+        Me.grpCartas.PerformLayout()
+        CType(Me.picTonto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -361,4 +434,9 @@ Partial Class FrmBNFacil
     Friend WithEvents grpTomarCarta As GroupBox
     Friend WithEvents bntTomarCarta As Button
     Friend WithEvents grpCartas As GroupBox
+    Friend WithEvents lblInfoNumeros1 As Label
+    Friend WithEvents lblInfoNumeros2 As Label
+    Friend WithEvents picTonto As PictureBox
+    Friend WithEvents btnVerTonto As Button
+    Friend WithEvents lblNumTonto As Label
 End Class
