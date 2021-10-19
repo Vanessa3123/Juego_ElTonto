@@ -80,13 +80,13 @@ Partial Class FrmBNFacil
         'GuardarToolStripMenuItem
         '
         Me.GuardarToolStripMenuItem.Name = "GuardarToolStripMenuItem"
-        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(76, 26)
+        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(76, 24)
         Me.GuardarToolStripMenuItem.Text = "Guardar"
         '
         'MejoresTiemposToolStripMenuItem
         '
         Me.MejoresTiemposToolStripMenuItem.Name = "MejoresTiemposToolStripMenuItem"
-        Me.MejoresTiemposToolStripMenuItem.Size = New System.Drawing.Size(137, 26)
+        Me.MejoresTiemposToolStripMenuItem.Size = New System.Drawing.Size(137, 24)
         Me.MejoresTiemposToolStripMenuItem.Text = "Mejores Tiempos"
         '
         'tiempoFac

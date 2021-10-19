@@ -9,6 +9,10 @@ Public Class FrmBNFacil
     Dim vector1() As Integer = {0, 0, 0, 0}
     Dim vector2() As Integer = {0, 0, 0, 0}
     Dim CartaTonto As Integer = 0
+    Dim posicionVector1 As Integer = 0
+    Dim valorPosicionVector1 As Integer = 0
+    Dim posicionVector2 As Integer = 0
+    Dim valorPosicionVector2 As Integer = 0
 
     Private Sub FrmBNFacil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         contador2 = 240
@@ -95,35 +99,33 @@ Public Class FrmBNFacil
 
     Private Sub btnRevolverCartas_Click(sender As Object, e As EventArgs) Handles btnRevolverCartas.Click
         Try
-
+            Dim numeroAleatorio As Integer
+            Randomize()
+            numeroAleatorio = (CInt(Rnd() * 9)) + 1
+            CartaTonto = numeroAleatorio
+            lblNumTonto.Text = Str(CartaTonto)
 
 #Region "Llenado Vector 1"
-            Dim numeroAleatorio As Integer
+
             Dim contadorNumerosAleatorios As Integer = 0
             Dim validaNumero As Boolean = False
 
             lblInfoNumeros1.Text = ""
 
             Do While (contadorNumerosAleatorios < 4)
-                Randomize()
-                numeroAleatorio = (CInt(Rnd() * 15)) + 1
 
-                CartaTonto = numeroAleatorio
-                lblNumTonto.Text = Str(CartaTonto)
-
-
+                numeroAleatorio = (CInt(Rnd() * 9)) + 1
 
                 For i = 0 To 3 Step 1
                     If vector1(i) = numeroAleatorio Then
                         validaNumero = True
-                    ElseIf vector1(i) = CartaTonto Then
-                        validaNumero = False
                         Exit For
                     Else
                         validaNumero = False
 
                     End If
                 Next
+
 
                 If validaNumero = False Then
                     For j = 0 To 3 Step 1
@@ -169,7 +171,7 @@ Public Class FrmBNFacil
 
             lblInfoNumeros2.Text = ""
 
-            Do While (contadorNumerosAleatorios2 <4)
+            Do While (contadorNumerosAleatorios2 < 4)
                 Randomize()
                 numeroAleatorio2 = (CInt(Rnd() * 8)) + 1
 
@@ -223,7 +225,31 @@ Public Class FrmBNFacil
 
     End Sub
 
-    Private Sub bntTomarCarta_Click(sender As Object, e As EventArgs) Handles bntTomarCarta.Click
+
+    Private Sub pic4_Click(sender As Object, e As EventArgs) Handles pic4.Click
+        valorPosicionVector1 = vector1(3)
+        posicionVector1 = 3
+
+        If valorPosicionVector1 = valorPosicionVector2 Then
+
+            Select Case posicionVector1
+
+                Case 0
+                    pic5.ImageLocation = ""
+                Case 1
+                    pic6.ImageLocation = ""
+                Case 2
+                    pic7.ImageLocation = ""
+                Case 3
+                    pic8.ImageLocation = ""
+            End Select
+        End If
+    End Sub
+
+    Private Sub btnVerTonto_Click(sender As Object, e As EventArgs) Handles btnVerTonto.Click
+        Dim srRuta As String = Application.StartupPath
+        Dim strArchivo As String = My.Computer.FileSystem.CombinePath(srRuta, "imagenes\a" + Str(CartaTonto) + ".jpg".Trim)
+        picTonto.ImageLocation = strArchivo
 
     End Sub
-End Class
+End Class'// fin class

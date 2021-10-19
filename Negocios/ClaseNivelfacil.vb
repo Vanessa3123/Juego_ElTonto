@@ -9,6 +9,8 @@ Public Class ClaseNivelfacil
 
 #Region "Metodos"
 
+
+
     '//Asignamos numeros aleatorios a las picture box y subimos las imagenes
     Public Sub NumerosAleatorios(vector1() As Integer, pic0 As PictureBox, pic1 As PictureBox,
                       pic2 As PictureBox, pic3 As PictureBox, lblInfoNumeros As Label)
