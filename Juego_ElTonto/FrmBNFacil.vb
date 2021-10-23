@@ -24,6 +24,7 @@ Public Class FrmBNFacil
         Me.lblMin.Text = contador2
         Me.tiempoFac.Enabled = False
     End Sub
+
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles tiempoFac.Tick
 
         contador2 = contador2 - 1
@@ -36,8 +37,8 @@ Public Class FrmBNFacil
 
     Private Sub btnJugar_Click(sender As Object, e As EventArgs) Handles btnJugar.Click
         tiempoFac.Start()
-        grpCartas.Visible = True
 
+        grpCartas.Visible = True
         btnRevolverCartas.Visible = True
     End Sub
 
@@ -222,11 +223,6 @@ Public Class FrmBNFacil
 
         '// compara una poscion azar con lo que tiene el vector dos para elegir una carta
     End Sub
-
-
-
-
-
 
 
 #Region "Metodos Creados"

@@ -279,6 +279,7 @@ Partial Class FrmBNFacil
         Me.lblInfoNumeros1.Size = New System.Drawing.Size(68, 23)
         Me.lblInfoNumeros1.TabIndex = 1020
         Me.lblInfoNumeros1.Text = "Vector 1"
+        Me.lblInfoNumeros1.Visible = False
         '
         'picTonto
         '
@@ -308,9 +309,10 @@ Partial Class FrmBNFacil
         Me.lblNumTonto.AutoSize = True
         Me.lblNumTonto.Location = New System.Drawing.Point(6, 18)
         Me.lblNumTonto.Name = "lblNumTonto"
-        Me.lblNumTonto.Size = New System.Drawing.Size(20, 17)
+        Me.lblNumTonto.Size = New System.Drawing.Size(94, 17)
         Me.lblNumTonto.TabIndex = 1025
-        Me.lblNumTonto.Text = "..."
+        Me.lblNumTonto.Text = "num del tonto"
+        Me.lblNumTonto.Visible = False
         '
         'grpTonto
         '
@@ -332,6 +334,7 @@ Partial Class FrmBNFacil
         Me.lblInfoV2.Size = New System.Drawing.Size(59, 17)
         Me.lblInfoV2.TabIndex = 1027
         Me.lblInfoV2.Text = "vector 2"
+        Me.lblInfoV2.Visible = False
         '
         'lblCartasMano
         '
