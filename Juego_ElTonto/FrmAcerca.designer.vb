@@ -33,6 +33,7 @@ Partial Class FrmAcerca
         Me.lblNombr = New System.Windows.Forms.Label()
         Me.btntxt = New System.Windows.Forms.Button()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
+        Me.lblNomb2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblNomb3
@@ -78,9 +79,9 @@ Partial Class FrmAcerca
         'lblNomb1
         '
         Me.lblNomb1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNomb1.Location = New System.Drawing.Point(228, 103)
+        Me.lblNomb1.Location = New System.Drawing.Point(217, 103)
         Me.lblNomb1.Name = "lblNomb1"
-        Me.lblNomb1.Size = New System.Drawing.Size(214, 106)
+        Me.lblNomb1.Size = New System.Drawing.Size(293, 106)
         Me.lblNomb1.TabIndex = 53
         Me.lblNomb1.Text = "Vanessa Lopez Navarro." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Kembly Rivera Sandoval." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Michael Vargas Soto."
         Me.lblNomb1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -154,6 +155,15 @@ Partial Class FrmAcerca
         Me.dtpFecha.Size = New System.Drawing.Size(233, 29)
         Me.dtpFecha.TabIndex = 61
         '
+        'lblNomb2
+        '
+        Me.lblNomb2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNomb2.Location = New System.Drawing.Point(456, 174)
+        Me.lblNomb2.Name = "lblNomb2"
+        Me.lblNomb2.Size = New System.Drawing.Size(164, 45)
+        Me.lblNomb2.TabIndex = 59
+        Me.lblNomb2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'FrmAcerca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
@@ -162,6 +172,7 @@ Partial Class FrmAcerca
         Me.ClientSize = New System.Drawing.Size(801, 725)
         Me.Controls.Add(Me.dtpFecha)
         Me.Controls.Add(Me.btntxt)
+        Me.Controls.Add(Me.lblNomb2)
         Me.Controls.Add(Me.lblNomb3)
         Me.Controls.Add(Me.lblTituloAcercade)
         Me.Controls.Add(Me.lbltextInfo)
@@ -190,4 +201,5 @@ Partial Class FrmAcerca
     Friend WithEvents lblNombr As Label
     Friend WithEvents btntxt As Button
     Friend WithEvents dtpFecha As DateTimePicker
+    Friend WithEvents lblNomb2 As Label
 End Class
