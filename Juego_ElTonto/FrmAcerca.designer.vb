@@ -22,7 +22,6 @@ Partial Class FrmAcerca
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblNomb2 = New System.Windows.Forms.Label()
         Me.lblNomb3 = New System.Windows.Forms.Label()
         Me.lblTituloAcercade = New System.Windows.Forms.Label()
         Me.lbltextInfo = New System.Windows.Forms.Label()
@@ -35,15 +34,6 @@ Partial Class FrmAcerca
         Me.btntxt = New System.Windows.Forms.Button()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
-        '
-        'lblNomb2
-        '
-        Me.lblNomb2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNomb2.Location = New System.Drawing.Point(215, 155)
-        Me.lblNomb2.Name = "lblNomb2"
-        Me.lblNomb2.Size = New System.Drawing.Size(164, 45)
-        Me.lblNomb2.TabIndex = 59
-        Me.lblNomb2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblNomb3
         '
@@ -60,7 +50,7 @@ Partial Class FrmAcerca
         Me.lblTituloAcercade.Font = New System.Drawing.Font("Arial Narrow", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTituloAcercade.Location = New System.Drawing.Point(306, 20)
         Me.lblTituloAcercade.Name = "lblTituloAcercade"
-        Me.lblTituloAcercade.Size = New System.Drawing.Size(185, 25)
+        Me.lblTituloAcercade.Size = New System.Drawing.Size(230, 31)
         Me.lblTituloAcercade.TabIndex = 57
         Me.lblTituloAcercade.Text = "Informacion General"
         Me.lblTituloAcercade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -82,17 +72,17 @@ Partial Class FrmAcerca
         Me.lblvers2.Name = "lblvers2"
         Me.lblvers2.Size = New System.Drawing.Size(237, 40)
         Me.lblvers2.TabIndex = 54
-        Me.lblvers2.Text = "4,7"
+        Me.lblvers2.Text = "1.0"
         Me.lblvers2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblNomb1
         '
         Me.lblNomb1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNomb1.Location = New System.Drawing.Point(215, 103)
+        Me.lblNomb1.Location = New System.Drawing.Point(228, 103)
         Me.lblNomb1.Name = "lblNomb1"
-        Me.lblNomb1.Size = New System.Drawing.Size(164, 45)
+        Me.lblNomb1.Size = New System.Drawing.Size(214, 106)
         Me.lblNomb1.TabIndex = 53
-        Me.lblNomb1.Text = "Vanessa Lopez Navarro."
+        Me.lblNomb1.Text = "Vanessa Lopez Navarro." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Kembly Rivera Sandoval." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Michael Vargas Soto."
         Me.lblNomb1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblInfo
@@ -161,18 +151,17 @@ Partial Class FrmAcerca
         Me.dtpFecha.Location = New System.Drawing.Point(220, 305)
         Me.dtpFecha.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.dtpFecha.Name = "dtpFecha"
-        Me.dtpFecha.Size = New System.Drawing.Size(233, 25)
+        Me.dtpFecha.Size = New System.Drawing.Size(233, 29)
         Me.dtpFecha.TabIndex = 61
         '
         'FrmAcerca
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSalmon
         Me.ClientSize = New System.Drawing.Size(801, 725)
         Me.Controls.Add(Me.dtpFecha)
         Me.Controls.Add(Me.btntxt)
-        Me.Controls.Add(Me.lblNomb2)
         Me.Controls.Add(Me.lblNomb3)
         Me.Controls.Add(Me.lblTituloAcercade)
         Me.Controls.Add(Me.lbltextInfo)
@@ -190,8 +179,6 @@ Partial Class FrmAcerca
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblNomb2 As Label
     Friend WithEvents lblNomb3 As Label
     Friend WithEvents lblTituloAcercade As Label
     Friend WithEvents lbltextInfo As Label
