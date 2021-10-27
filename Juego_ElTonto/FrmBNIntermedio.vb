@@ -188,7 +188,7 @@ Public Class FrmBNIntermedio
     End Sub
 
     Private Sub bntTomarCarta_Click(sender As Object, e As EventArgs) Handles bntTomarCarta.Click
-        tomarCarta(vector2, pic10)
+        tomarCarta(vector2)
 
         For i = 0 To 11 Step 1
             If vector1(i) = 0 Then
@@ -219,16 +219,16 @@ Public Class FrmBNIntermedio
     End Sub
 
 #Region "Metodos Creados"
-    Public Sub tomarCarta(vec2() As Integer, pic10 As PictureBox)
+    Public Sub tomarCarta(vec2() As Integer)
         '// compara una poscion azar con lo que tiene el vector dos para elegir una carta
         Randomize()
-        index = (CInt(Rnd() * 3))
+        index = (CInt(Rnd() * 11))
 
         For i = 0 To 11 Step 1
             If vec2(index) <> 0 Then
                 cartaOponente = vec2(index)
             Else
-                index = (CInt(Rnd() * 3))
+                index = (CInt(Rnd() * 11))
                 cartaOponente = vec2(index)
             End If
         Next
