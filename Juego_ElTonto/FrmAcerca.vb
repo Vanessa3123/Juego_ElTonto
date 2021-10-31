@@ -12,6 +12,7 @@ Public Class FrmAcerca
         Try
             iEntidaes.strAutor = lblNomb1.Text
             iEntidaes.strAutor2 = lblNomb2.Text
+            iEntidaes.strAutor3 = lblNomb3.Text
             iEntidaes.dtFecha = dtpFecha.Value
             iEntidaes.dmlVersion = Convert.ToDecimal(lblvers2.Text)
             iEntidaes.strInformacion = lbltextInfo.Text
@@ -32,18 +33,6 @@ Public Class FrmAcerca
         End Using
 
         Exit Sub
-
-    End Sub
-
-    Private Sub lblNombr_Click(sender As Object, e As EventArgs) Handles lblNombr.Click
-
-    End Sub
-
-    Private Sub lblfech_Click(sender As Object, e As EventArgs) Handles lblfech.Click
-
-    End Sub
-
-    Private Sub lblVersi_Click(sender As Object, e As EventArgs) Handles lblVersi.Click
 
     End Sub
 End Class

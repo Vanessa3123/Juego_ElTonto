@@ -34,10 +34,10 @@ Partial Class FrmRegistro
         '
         'lblNiveles
         '
-        Me.lblNiveles.BackColor = System.Drawing.Color.RoyalBlue
+        Me.lblNiveles.BackColor = System.Drawing.Color.Brown
         Me.lblNiveles.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNiveles.ForeColor = System.Drawing.Color.White
-        Me.lblNiveles.Location = New System.Drawing.Point(54, 127)
+        Me.lblNiveles.Location = New System.Drawing.Point(206, 234)
         Me.lblNiveles.Name = "lblNiveles"
         Me.lblNiveles.Size = New System.Drawing.Size(93, 20)
         Me.lblNiveles.TabIndex = 20
@@ -46,9 +46,9 @@ Partial Class FrmRegistro
         '
         'btnAvanzado
         '
-        Me.btnAvanzado.BackColor = System.Drawing.Color.DarkGoldenrod
+        Me.btnAvanzado.BackColor = System.Drawing.Color.Tomato
         Me.btnAvanzado.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAvanzado.Location = New System.Drawing.Point(168, 239)
+        Me.btnAvanzado.Location = New System.Drawing.Point(327, 332)
         Me.btnAvanzado.Name = "btnAvanzado"
         Me.btnAvanzado.Size = New System.Drawing.Size(137, 32)
         Me.btnAvanzado.TabIndex = 19
@@ -57,9 +57,9 @@ Partial Class FrmRegistro
         '
         'btnIntermedio
         '
-        Me.btnIntermedio.BackColor = System.Drawing.Color.Gold
+        Me.btnIntermedio.BackColor = System.Drawing.Color.Tomato
         Me.btnIntermedio.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIntermedio.Location = New System.Drawing.Point(168, 181)
+        Me.btnIntermedio.Location = New System.Drawing.Point(327, 283)
         Me.btnIntermedio.Name = "btnIntermedio"
         Me.btnIntermedio.Size = New System.Drawing.Size(137, 30)
         Me.btnIntermedio.TabIndex = 18
@@ -68,9 +68,9 @@ Partial Class FrmRegistro
         '
         'btnFacil
         '
-        Me.btnFacil.BackColor = System.Drawing.Color.Goldenrod
+        Me.btnFacil.BackColor = System.Drawing.Color.Tomato
         Me.btnFacil.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFacil.Location = New System.Drawing.Point(168, 127)
+        Me.btnFacil.Location = New System.Drawing.Point(327, 233)
         Me.btnFacil.Name = "btnFacil"
         Me.btnFacil.Size = New System.Drawing.Size(137, 32)
         Me.btnFacil.TabIndex = 17
@@ -80,17 +80,17 @@ Partial Class FrmRegistro
         'txtUsuario
         '
         Me.txtUsuario.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsuario.Location = New System.Drawing.Point(168, 84)
+        Me.txtUsuario.Location = New System.Drawing.Point(327, 178)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(137, 25)
         Me.txtUsuario.TabIndex = 14
         '
         'lblUsuario
         '
-        Me.lblUsuario.BackColor = System.Drawing.Color.RoyalBlue
+        Me.lblUsuario.BackColor = System.Drawing.Color.Brown
         Me.lblUsuario.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUsuario.ForeColor = System.Drawing.Color.White
-        Me.lblUsuario.Location = New System.Drawing.Point(54, 84)
+        Me.lblUsuario.Location = New System.Drawing.Point(206, 177)
         Me.lblUsuario.Name = "lblUsuario"
         Me.lblUsuario.Size = New System.Drawing.Size(93, 20)
         Me.lblUsuario.TabIndex = 13
@@ -100,17 +100,17 @@ Partial Class FrmRegistro
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(168, 33)
+        Me.txtNombre.Location = New System.Drawing.Point(327, 138)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(137, 25)
         Me.txtNombre.TabIndex = 12
         '
         'lblNombre
         '
-        Me.lblNombre.BackColor = System.Drawing.Color.RoyalBlue
+        Me.lblNombre.BackColor = System.Drawing.Color.Brown
         Me.lblNombre.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.ForeColor = System.Drawing.Color.White
-        Me.lblNombre.Location = New System.Drawing.Point(54, 38)
+        Me.lblNombre.Location = New System.Drawing.Point(206, 137)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(93, 20)
         Me.lblNombre.TabIndex = 11
@@ -122,9 +122,8 @@ Partial Class FrmRegistro
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.BackgroundImage = Global.Juego_ElTonto.My.Resources.Resources.D_NQ_NP_711752_MLA44377760961_122020_V
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(557, 389)
+        Me.ClientSize = New System.Drawing.Size(698, 450)
         Me.Controls.Add(Me.lblNiveles)
         Me.Controls.Add(Me.btnAvanzado)
         Me.Controls.Add(Me.btnIntermedio)
@@ -134,7 +133,6 @@ Partial Class FrmRegistro
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.lblNombre)
         Me.Name = "FrmRegistro"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ingresa tus Datos"
         Me.ResumeLayout(False)
         Me.PerformLayout()

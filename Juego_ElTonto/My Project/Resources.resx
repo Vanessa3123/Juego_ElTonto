@@ -121,10 +121,4 @@
   <data name="a 0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a 0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="descarga (24)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\descarga (24).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="D_NQ_NP_711752-MLA44377760961_122020-V" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\D_NQ_NP_711752-MLA44377760961_122020-V.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
