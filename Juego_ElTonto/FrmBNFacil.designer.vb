@@ -427,6 +427,7 @@ Partial Class FrmBNFacil
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "FrmBNFacil"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nivel Facil Batalla Naval"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

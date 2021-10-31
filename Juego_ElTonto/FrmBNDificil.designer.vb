@@ -649,6 +649,7 @@ Partial Class FrmBNDificil
         Me.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FrmBNDificil"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Nivel Dificil"
         Me.grpConteo.ResumeLayout(False)
         Me.grpConteo.PerformLayout()

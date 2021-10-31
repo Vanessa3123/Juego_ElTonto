@@ -28,8 +28,9 @@ Partial Class frmMejores_tiempos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(771, 405)
         Me.Name = "frmMejores_tiempos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mejores Tiempos"
         Me.ResumeLayout(False)
 
