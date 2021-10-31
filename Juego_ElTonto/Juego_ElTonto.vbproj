@@ -103,6 +103,12 @@
     <Compile Include="frmInstrucciones.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMejores_tiempos.Designer.vb">
+      <DependentUpon>frmMejores_tiempos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMejores_tiempos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMenuPrincipal.designer.vb">
       <DependentUpon>FrmMenuPrincipal.vb</DependentUpon>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInstrucciones.resx">
       <DependentUpon>frmInstrucciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMejores_tiempos.resx">
+      <DependentUpon>frmMejores_tiempos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.vb</DependentUpon>

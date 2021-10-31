@@ -117,21 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>                                                Instrucciones 
--El objetivo del juego es deshacerse de todas las cartas.
-
--Del grupo de cartas se debe escoger una carta al azar y sacarla del
-mazo de cartas.
-
--Una vez que se ha sacado una carta del mazo, las restantes cartas son repartidas entre los jugadores
-participantes.
-
--Eliminadas las parejas por cada jugador, se procederá a ir tomando una carta de las cartas restantes del
-resto de jugadores hasta que se vayan formando las parejas faltantes y un solo jugador quede con una
-sola carta, quien será el Tonto.
-
--
-</value>
-  </data>
 </root>
