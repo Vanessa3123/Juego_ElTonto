@@ -70,6 +70,16 @@
             strInformacion = value
         End Set
     End Property
+    Public intCronometro As String
+    Public Property intCronometro1 As String
+        Get
+            Return intCronometro
+        End Get
+        Set(value As String)
+            strInformacion = value
+        End Set
+    End Property
+
 
 
 
