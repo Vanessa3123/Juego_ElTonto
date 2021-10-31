@@ -48,6 +48,8 @@ Public Class FrmBNDificil
 
         End If
 
+        Me.btnguardar2.Visible = False
+
     End Sub
 
     Private Sub btnRevolverCartas_Click(sender As Object, e As EventArgs) Handles btnRevolverCartas.Click

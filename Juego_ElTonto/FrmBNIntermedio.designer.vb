@@ -31,7 +31,6 @@ Partial Class FrmBNIntermedio
         Me.TiempoInt = New System.Windows.Forms.Timer(Me.components)
         Me.lblMin = New System.Windows.Forms.Label()
         Me.btnJugar = New System.Windows.Forms.Button()
-        Me.lblPuntos = New System.Windows.Forms.Label()
         Me.btnstop = New System.Windows.Forms.Button()
         Me.txtcartasJugadorPc = New System.Windows.Forms.TextBox()
         Me.txtcartasJugador1 = New System.Windows.Forms.TextBox()
@@ -62,6 +61,9 @@ Partial Class FrmBNIntermedio
         Me.picOponente = New System.Windows.Forms.PictureBox()
         Me.btnRevolverCartas = New System.Windows.Forms.Button()
         Me.grpConteo = New System.Windows.Forms.GroupBox()
+        Me.btntxt = New System.Windows.Forms.Button()
+        Me.btnguardar = New System.Windows.Forms.Button()
+        Me.btnguardar2 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.grpTonto.SuspendLayout()
         CType(Me.picTonto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -89,7 +91,7 @@ Partial Class FrmBNIntermedio
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GuardarToolStripMenuItem, Me.MejoresTiemposToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1356, 31)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1356, 28)
         Me.MenuStrip1.TabIndex = 684
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -97,14 +99,14 @@ Partial Class FrmBNIntermedio
         '
         Me.GuardarToolStripMenuItem.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GuardarToolStripMenuItem.Name = "GuardarToolStripMenuItem"
-        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(82, 27)
+        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(67, 24)
         Me.GuardarToolStripMenuItem.Text = "Guardar"
         '
         'MejoresTiemposToolStripMenuItem
         '
         Me.MejoresTiemposToolStripMenuItem.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MejoresTiemposToolStripMenuItem.Name = "MejoresTiemposToolStripMenuItem"
-        Me.MejoresTiemposToolStripMenuItem.Size = New System.Drawing.Size(145, 27)
+        Me.MejoresTiemposToolStripMenuItem.Size = New System.Drawing.Size(115, 24)
         Me.MejoresTiemposToolStripMenuItem.Text = "Mejores Tiempos"
         '
         'txtUsuarioB
@@ -113,7 +115,7 @@ Partial Class FrmBNIntermedio
         Me.txtUsuarioB.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtUsuarioB.Name = "txtUsuarioB"
         Me.txtUsuarioB.ReadOnly = True
-        Me.txtUsuarioB.Size = New System.Drawing.Size(310, 25)
+        Me.txtUsuarioB.Size = New System.Drawing.Size(310, 21)
         Me.txtUsuarioB.TabIndex = 683
         '
         'Label19
@@ -122,7 +124,7 @@ Partial Class FrmBNIntermedio
         Me.Label19.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.Location = New System.Drawing.Point(12, 49)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(68, 23)
+        Me.Label19.Size = New System.Drawing.Size(55, 20)
         Me.Label19.TabIndex = 678
         Me.Label19.Text = "Usuario:"
         '
@@ -154,15 +156,6 @@ Partial Class FrmBNIntermedio
         Me.btnJugar.Text = "Jugar"
         Me.btnJugar.UseVisualStyleBackColor = False
         '
-        'lblPuntos
-        '
-        Me.lblPuntos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPuntos.Location = New System.Drawing.Point(454, 97)
-        Me.lblPuntos.Name = "lblPuntos"
-        Me.lblPuntos.Size = New System.Drawing.Size(103, 28)
-        Me.lblPuntos.TabIndex = 1204
-        Me.lblPuntos.Text = "Puntos"
-        '
         'btnstop
         '
         Me.btnstop.BackColor = System.Drawing.Color.Brown
@@ -181,7 +174,7 @@ Partial Class FrmBNIntermedio
         Me.txtcartasJugadorPc.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcartasJugadorPc.Location = New System.Drawing.Point(213, 93)
         Me.txtcartasJugadorPc.Name = "txtcartasJugadorPc"
-        Me.txtcartasJugadorPc.Size = New System.Drawing.Size(155, 28)
+        Me.txtcartasJugadorPc.Size = New System.Drawing.Size(155, 24)
         Me.txtcartasJugadorPc.TabIndex = 1215
         '
         'txtcartasJugador1
@@ -190,7 +183,7 @@ Partial Class FrmBNIntermedio
         Me.txtcartasJugador1.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcartasJugador1.Location = New System.Drawing.Point(213, 15)
         Me.txtcartasJugador1.Name = "txtcartasJugador1"
-        Me.txtcartasJugador1.Size = New System.Drawing.Size(155, 28)
+        Me.txtcartasJugador1.Size = New System.Drawing.Size(155, 24)
         Me.txtcartasJugador1.TabIndex = 1214
         '
         'lblCartasPc
@@ -199,7 +192,7 @@ Partial Class FrmBNIntermedio
         Me.lblCartasPc.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCartasPc.Location = New System.Drawing.Point(28, 93)
         Me.lblCartasPc.Name = "lblCartasPc"
-        Me.lblCartasPc.Size = New System.Drawing.Size(162, 23)
+        Me.lblCartasPc.Size = New System.Drawing.Size(130, 20)
         Me.lblCartasPc.TabIndex = 1213
         Me.lblCartasPc.Text = "Cartas de la Maquina:"
         '
@@ -209,7 +202,7 @@ Partial Class FrmBNIntermedio
         Me.lblCartasMano.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCartasMano.Location = New System.Drawing.Point(28, 15)
         Me.lblCartasMano.Name = "lblCartasMano"
-        Me.lblCartasMano.Size = New System.Drawing.Size(125, 23)
+        Me.lblCartasMano.Size = New System.Drawing.Size(100, 20)
         Me.lblCartasMano.TabIndex = 1212
         Me.lblCartasMano.Text = "Cartas en Mano:"
         '
@@ -218,7 +211,7 @@ Partial Class FrmBNIntermedio
         Me.lblInfoV2.AutoSize = True
         Me.lblInfoV2.Location = New System.Drawing.Point(974, 106)
         Me.lblInfoV2.Name = "lblInfoV2"
-        Me.lblInfoV2.Size = New System.Drawing.Size(52, 20)
+        Me.lblInfoV2.Size = New System.Drawing.Size(42, 16)
         Me.lblInfoV2.TabIndex = 1211
         Me.lblInfoV2.Text = "vector 2"
         Me.lblInfoV2.Visible = False
@@ -253,7 +246,7 @@ Partial Class FrmBNIntermedio
         Me.lblNumTonto.AutoSize = True
         Me.lblNumTonto.Location = New System.Drawing.Point(6, 18)
         Me.lblNumTonto.Name = "lblNumTonto"
-        Me.lblNumTonto.Size = New System.Drawing.Size(83, 20)
+        Me.lblNumTonto.Size = New System.Drawing.Size(65, 16)
         Me.lblNumTonto.TabIndex = 1025
         Me.lblNumTonto.Text = "num del tonto"
         Me.lblNumTonto.Visible = False
@@ -388,7 +381,7 @@ Partial Class FrmBNIntermedio
         Me.lblInfoNumeros2.AutoSize = True
         Me.lblInfoNumeros2.Location = New System.Drawing.Point(31, 577)
         Me.lblInfoNumeros2.Name = "lblInfoNumeros2"
-        Me.lblInfoNumeros2.Size = New System.Drawing.Size(14, 23)
+        Me.lblInfoNumeros2.Size = New System.Drawing.Size(12, 20)
         Me.lblInfoNumeros2.TabIndex = 1021
         Me.lblInfoNumeros2.Text = "."
         '
@@ -397,7 +390,7 @@ Partial Class FrmBNIntermedio
         Me.lblInfoNumeros1.AutoSize = True
         Me.lblInfoNumeros1.Location = New System.Drawing.Point(9, 411)
         Me.lblInfoNumeros1.Name = "lblInfoNumeros1"
-        Me.lblInfoNumeros1.Size = New System.Drawing.Size(68, 23)
+        Me.lblInfoNumeros1.Size = New System.Drawing.Size(54, 20)
         Me.lblInfoNumeros1.TabIndex = 1020
         Me.lblInfoNumeros1.Text = "Vector 1"
         Me.lblInfoNumeros1.Visible = False
@@ -471,6 +464,7 @@ Partial Class FrmBNIntermedio
         '
         'grpConteo
         '
+        Me.grpConteo.Controls.Add(Me.btntxt)
         Me.grpConteo.Controls.Add(Me.txtcartasJugadorPc)
         Me.grpConteo.Controls.Add(Me.txtcartasJugador1)
         Me.grpConteo.Controls.Add(Me.lblCartasPc)
@@ -481,12 +475,53 @@ Partial Class FrmBNIntermedio
         Me.grpConteo.TabIndex = 1216
         Me.grpConteo.TabStop = False
         '
+        'btntxt
+        '
+        Me.btntxt.BackColor = System.Drawing.Color.Moccasin
+        Me.btntxt.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btntxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntxt.Location = New System.Drawing.Point(147, 52)
+        Me.btntxt.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.btntxt.Name = "btntxt"
+        Me.btntxt.Size = New System.Drawing.Size(114, 35)
+        Me.btntxt.TabIndex = 1217
+        Me.btntxt.Text = "Guardar en TXT"
+        Me.btntxt.UseVisualStyleBackColor = False
+        '
+        'btnguardar
+        '
+        Me.btnguardar.BackColor = System.Drawing.Color.Moccasin
+        Me.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnguardar.Location = New System.Drawing.Point(457, 106)
+        Me.btnguardar.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.btnguardar.Name = "btnguardar"
+        Me.btnguardar.Size = New System.Drawing.Size(114, 35)
+        Me.btnguardar.TabIndex = 1217
+        Me.btnguardar.Text = "Guardar en TXT"
+        Me.btnguardar.UseVisualStyleBackColor = False
+        '
+        'btnguardar2
+        '
+        Me.btnguardar2.BackColor = System.Drawing.Color.Moccasin
+        Me.btnguardar2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnguardar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnguardar2.Location = New System.Drawing.Point(457, 106)
+        Me.btnguardar2.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.btnguardar2.Name = "btnguardar2"
+        Me.btnguardar2.Size = New System.Drawing.Size(114, 35)
+        Me.btnguardar2.TabIndex = 1223
+        Me.btnguardar2.Text = "Guardar"
+        Me.btnguardar2.UseVisualStyleBackColor = False
+        '
         'FrmBNIntermedio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1356, 805)
+        Me.ClientSize = New System.Drawing.Size(1356, 749)
+        Me.Controls.Add(Me.btnguardar2)
+        Me.Controls.Add(Me.btnguardar)
         Me.Controls.Add(Me.grpConteo)
         Me.Controls.Add(Me.lblInfoV2)
         Me.Controls.Add(Me.grpTonto)
@@ -494,7 +529,6 @@ Partial Class FrmBNIntermedio
         Me.Controls.Add(Me.grpTomarCarta)
         Me.Controls.Add(Me.btnRevolverCartas)
         Me.Controls.Add(Me.btnstop)
-        Me.Controls.Add(Me.lblPuntos)
         Me.Controls.Add(Me.btnJugar)
         Me.Controls.Add(Me.lblMin)
         Me.Controls.Add(Me.MenuStrip1)
@@ -539,7 +573,6 @@ Partial Class FrmBNIntermedio
     Friend WithEvents TiempoInt As Timer
     Friend WithEvents lblMin As Label
     Friend WithEvents btnJugar As Button
-    Friend WithEvents lblPuntos As Label
     Friend WithEvents btnstop As Button
     Friend WithEvents txtcartasJugadorPc As TextBox
     Friend WithEvents txtcartasJugador1 As TextBox
@@ -570,4 +603,7 @@ Partial Class FrmBNIntermedio
     Friend WithEvents picOponente As PictureBox
     Friend WithEvents btnRevolverCartas As Button
     Friend WithEvents grpConteo As GroupBox
+    Friend WithEvents btntxt As Button
+    Friend WithEvents btnguardar As Button
+    Friend WithEvents btnguardar2 As Button
 End Class

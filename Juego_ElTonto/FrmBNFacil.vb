@@ -19,10 +19,16 @@ Public Class FrmBNFacil
     Dim contJugador1 As Integer = 4
     Dim contadorMaquina As Integer = 4
 
+    Dim comprobar As Boolean = False
+    Dim iEntidaes As New Entidades.Propirdades
+    Dim comprobartxt As Boolean
+
     Private Sub FrmBNFacil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         contador2 = 240
         Me.lblMin.Text = contador2
         Me.tiempoFac.Enabled = False
+
+        Me.btnguardar2.Visible = False
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles tiempoFac.Tick
@@ -307,6 +313,56 @@ Public Class FrmBNFacil
         index = 0
         cartaOponente = 0
 
+    End Sub
+
+    Private Sub btntxt_Click(sender As Object, e As EventArgs) Handles btntxt.Click
+        Try
+            iEntidaes.strUsuario = txtUsuarioB.Text
+            iEntidaes.intCronometro = Convert.ToInt32(lblMin.Text)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        Dim obj As New Negocios.llamadaTXT
+        Dim ruta As String
+        If comprobar = True Then
+            Using sfdArchivotxt As New SaveFileDialog
+                If sfdArchivotxt.ShowDialog = DialogResult.OK Then
+                    ruta = sfdArchivotxt.FileName
+                    obj.llamarescritura(ruta, iEntidaes.strUsuario, iEntidaes.intCronometro)
+                    Me.btnguardar2.Visible = True
+                End If
+            End Using
+        Else
+            MsgBox("No ha ingresado los datos a los textbox")
+            Exit Sub
+        End If
+    End Sub
+
+    Private Sub grpCartas_Enter(sender As Object, e As EventArgs) Handles grpCartas.Enter
+
+    End Sub
+
+    Private Sub btnguardar2_Click(sender As Object, e As EventArgs) Handles btnguardar2.Click
+        Try
+            iEntidaes.strUsuario = txtUsuarioB.Text
+            iEntidaes.intCronometro = Convert.ToInt32(lblMin.Text)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        Dim obj As New Negocios.llamadaTXT
+        Dim ruta As String
+        If comprobar = True Then
+            Using sfdArchivotxt As New SaveFileDialog
+                If sfdArchivotxt.ShowDialog = DialogResult.OK Then
+                    ruta = sfdArchivotxt.FileName
+                    obj.llamarescritura(ruta, iEntidaes.strUsuario, iEntidaes.intCronometro)
+                    Me.btnguardar2.Visible = True
+                End If
+            End Using
+        Else
+            MsgBox("No ha ingresado los datos a los textbox")
+            Exit Sub
+        End If
     End Sub
 #End Region
 

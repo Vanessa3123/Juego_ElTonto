@@ -172,9 +172,9 @@ Partial Class FrmBNDificil
         Me.grpConteo.Controls.Add(Me.txtcartasJugador1)
         Me.grpConteo.Controls.Add(Me.lblCartasPc)
         Me.grpConteo.Controls.Add(Me.lblCartasMano)
-        Me.grpConteo.Location = New System.Drawing.Point(450, 662)
+        Me.grpConteo.Location = New System.Drawing.Point(399, 568)
         Me.grpConteo.Name = "grpConteo"
-        Me.grpConteo.Size = New System.Drawing.Size(409, 138)
+        Me.grpConteo.Size = New System.Drawing.Size(431, 72)
         Me.grpConteo.TabIndex = 1221
         Me.grpConteo.TabStop = False
         '
@@ -182,7 +182,7 @@ Partial Class FrmBNDificil
         '
         Me.txtcartasJugadorPc.Enabled = False
         Me.txtcartasJugadorPc.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcartasJugadorPc.Location = New System.Drawing.Point(213, 93)
+        Me.txtcartasJugadorPc.Location = New System.Drawing.Point(226, 38)
         Me.txtcartasJugadorPc.Name = "txtcartasJugadorPc"
         Me.txtcartasJugadorPc.Size = New System.Drawing.Size(155, 24)
         Me.txtcartasJugadorPc.TabIndex = 1215
@@ -191,7 +191,7 @@ Partial Class FrmBNDificil
         '
         Me.txtcartasJugador1.Enabled = False
         Me.txtcartasJugador1.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcartasJugador1.Location = New System.Drawing.Point(213, 15)
+        Me.txtcartasJugador1.Location = New System.Drawing.Point(32, 38)
         Me.txtcartasJugador1.Name = "txtcartasJugador1"
         Me.txtcartasJugador1.Size = New System.Drawing.Size(155, 24)
         Me.txtcartasJugador1.TabIndex = 1214
@@ -200,7 +200,7 @@ Partial Class FrmBNDificil
         '
         Me.lblCartasPc.AutoSize = True
         Me.lblCartasPc.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCartasPc.Location = New System.Drawing.Point(28, 93)
+        Me.lblCartasPc.Location = New System.Drawing.Point(222, 15)
         Me.lblCartasPc.Name = "lblCartasPc"
         Me.lblCartasPc.Size = New System.Drawing.Size(130, 20)
         Me.lblCartasPc.TabIndex = 1213
@@ -221,7 +221,7 @@ Partial Class FrmBNDificil
         Me.grpTonto.Controls.Add(Me.btnVerTonto)
         Me.grpTonto.Controls.Add(Me.lblNumTonto)
         Me.grpTonto.Controls.Add(Me.picTonto)
-        Me.grpTonto.Location = New System.Drawing.Point(996, 544)
+        Me.grpTonto.Location = New System.Drawing.Point(1000, 358)
         Me.grpTonto.Name = "grpTonto"
         Me.grpTonto.Size = New System.Drawing.Size(244, 234)
         Me.grpTonto.TabIndex = 1220
@@ -268,7 +268,6 @@ Partial Class FrmBNDificil
         Me.grpCartas.Controls.Add(Me.pic22)
         Me.grpCartas.Controls.Add(Me.pic21)
         Me.grpCartas.Controls.Add(Me.pic20)
-        Me.grpCartas.Controls.Add(Me.btnRevolverCartas)
         Me.grpCartas.Controls.Add(Me.pic19)
         Me.grpCartas.Controls.Add(Me.pic18)
         Me.grpCartas.Controls.Add(Me.pic17)
@@ -292,9 +291,9 @@ Partial Class FrmBNDificil
         Me.grpCartas.Controls.Add(Me.pic2)
         Me.grpCartas.Controls.Add(Me.pic1)
         Me.grpCartas.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grpCartas.Location = New System.Drawing.Point(26, 189)
+        Me.grpCartas.Location = New System.Drawing.Point(29, 127)
         Me.grpCartas.Name = "grpCartas"
-        Me.grpCartas.Size = New System.Drawing.Size(933, 446)
+        Me.grpCartas.Size = New System.Drawing.Size(933, 435)
         Me.grpCartas.TabIndex = 1219
         Me.grpCartas.TabStop = False
         Me.grpCartas.Text = "Cartas"
@@ -546,7 +545,7 @@ Partial Class FrmBNDificil
         'lblInfoNumeros1
         '
         Me.lblInfoNumeros1.AutoSize = True
-        Me.lblInfoNumeros1.Location = New System.Drawing.Point(35, 647)
+        Me.lblInfoNumeros1.Location = New System.Drawing.Point(28, 584)
         Me.lblInfoNumeros1.Name = "lblInfoNumeros1"
         Me.lblInfoNumeros1.Size = New System.Drawing.Size(44, 16)
         Me.lblInfoNumeros1.TabIndex = 1020
@@ -558,9 +557,9 @@ Partial Class FrmBNDificil
         Me.grpTomarCarta.Controls.Add(Me.bntTomarCarta)
         Me.grpTomarCarta.Controls.Add(Me.picOponente)
         Me.grpTomarCarta.Font = New System.Drawing.Font("Arial Narrow", 10.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grpTomarCarta.Location = New System.Drawing.Point(996, 90)
+        Me.grpTomarCarta.Location = New System.Drawing.Point(996, 13)
         Me.grpTomarCarta.Name = "grpTomarCarta"
-        Me.grpTomarCarta.Size = New System.Drawing.Size(248, 384)
+        Me.grpTomarCarta.Size = New System.Drawing.Size(248, 313)
         Me.grpTomarCarta.TabIndex = 1218
         Me.grpTomarCarta.TabStop = False
         Me.grpTomarCarta.Text = "Tomar Carta del Oponente"
@@ -593,10 +592,10 @@ Partial Class FrmBNDificil
         Me.btnRevolverCartas.BackColor = System.Drawing.Color.Brown
         Me.btnRevolverCartas.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRevolverCartas.ForeColor = System.Drawing.Color.White
-        Me.btnRevolverCartas.Location = New System.Drawing.Point(106, 438)
+        Me.btnRevolverCartas.Location = New System.Drawing.Point(130, 583)
         Me.btnRevolverCartas.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRevolverCartas.Name = "btnRevolverCartas"
-        Me.btnRevolverCartas.Size = New System.Drawing.Size(214, 70)
+        Me.btnRevolverCartas.Size = New System.Drawing.Size(212, 46)
         Me.btnRevolverCartas.TabIndex = 1217
         Me.btnRevolverCartas.Text = "Revolver Cartas"
         Me.btnRevolverCartas.UseVisualStyleBackColor = False
@@ -620,7 +619,7 @@ Partial Class FrmBNDificil
         Me.btnguardar2.BackColor = System.Drawing.Color.Moccasin
         Me.btnguardar2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnguardar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnguardar2.Location = New System.Drawing.Point(464, 111)
+        Me.btnguardar2.Location = New System.Drawing.Point(464, 57)
         Me.btnguardar2.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.btnguardar2.Name = "btnguardar2"
         Me.btnguardar2.Size = New System.Drawing.Size(114, 35)
@@ -633,12 +632,13 @@ Partial Class FrmBNDificil
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1337, 749)
+        Me.ClientSize = New System.Drawing.Size(1337, 646)
         Me.Controls.Add(Me.btnguardar2)
         Me.Controls.Add(Me.btntxt)
         Me.Controls.Add(Me.grpConteo)
         Me.Controls.Add(Me.grpTonto)
         Me.Controls.Add(Me.grpCartas)
+        Me.Controls.Add(Me.btnRevolverCartas)
         Me.Controls.Add(Me.grpTomarCarta)
         Me.Controls.Add(Me.lblInfoNumeros1)
         Me.Controls.Add(Me.btnstop)
