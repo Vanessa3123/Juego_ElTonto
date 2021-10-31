@@ -61,6 +61,18 @@
         End Set
     End Property
 
+    Public strUsuario As String
+    Public Property StrUsuario1 As String
+        Get
+            Return strUsuario
+        End Get
+        Set(value As String)
+            strInformacion = value
+        End Set
+    End Property
+
+
+
 
 #End Region
 
