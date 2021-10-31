@@ -51,7 +51,7 @@ Partial Class FrmAcerca
         Me.lblTituloAcercade.Font = New System.Drawing.Font("Arial Narrow", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTituloAcercade.Location = New System.Drawing.Point(306, 20)
         Me.lblTituloAcercade.Name = "lblTituloAcercade"
-        Me.lblTituloAcercade.Size = New System.Drawing.Size(230, 31)
+        Me.lblTituloAcercade.Size = New System.Drawing.Size(185, 25)
         Me.lblTituloAcercade.TabIndex = 57
         Me.lblTituloAcercade.Text = "Informacion General"
         Me.lblTituloAcercade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -59,7 +59,7 @@ Partial Class FrmAcerca
         'lbltextInfo
         '
         Me.lbltextInfo.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbltextInfo.Location = New System.Drawing.Point(215, 442)
+        Me.lbltextInfo.Location = New System.Drawing.Point(215, 280)
         Me.lbltextInfo.Name = "lbltextInfo"
         Me.lbltextInfo.Size = New System.Drawing.Size(239, 89)
         Me.lbltextInfo.TabIndex = 56
@@ -69,7 +69,7 @@ Partial Class FrmAcerca
         'lblvers2
         '
         Me.lblvers2.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvers2.Location = New System.Drawing.Point(217, 373)
+        Me.lblvers2.Location = New System.Drawing.Point(217, 240)
         Me.lblvers2.Name = "lblvers2"
         Me.lblvers2.Size = New System.Drawing.Size(237, 40)
         Me.lblvers2.TabIndex = 54
@@ -79,7 +79,7 @@ Partial Class FrmAcerca
         'lblNomb1
         '
         Me.lblNomb1.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNomb1.Location = New System.Drawing.Point(217, 103)
+        Me.lblNomb1.Location = New System.Drawing.Point(216, 72)
         Me.lblNomb1.Name = "lblNomb1"
         Me.lblNomb1.Size = New System.Drawing.Size(293, 106)
         Me.lblNomb1.TabIndex = 53
@@ -91,7 +91,7 @@ Partial Class FrmAcerca
         Me.lblInfo.BackColor = System.Drawing.Color.Brown
         Me.lblInfo.Font = New System.Drawing.Font("Arial Narrow", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblInfo.ForeColor = System.Drawing.Color.White
-        Me.lblInfo.Location = New System.Drawing.Point(14, 474)
+        Me.lblInfo.Location = New System.Drawing.Point(22, 304)
         Me.lblInfo.Name = "lblInfo"
         Me.lblInfo.Size = New System.Drawing.Size(187, 36)
         Me.lblInfo.TabIndex = 52
@@ -103,7 +103,7 @@ Partial Class FrmAcerca
         Me.lblfech.BackColor = System.Drawing.Color.Brown
         Me.lblfech.Font = New System.Drawing.Font("Arial Narrow", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblfech.ForeColor = System.Drawing.Color.White
-        Me.lblfech.Location = New System.Drawing.Point(14, 305)
+        Me.lblfech.Location = New System.Drawing.Point(22, 187)
         Me.lblfech.Name = "lblfech"
         Me.lblfech.Size = New System.Drawing.Size(187, 32)
         Me.lblfech.TabIndex = 51
@@ -115,7 +115,7 @@ Partial Class FrmAcerca
         Me.lblVersi.BackColor = System.Drawing.Color.Brown
         Me.lblVersi.Font = New System.Drawing.Font("Arial Narrow", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblVersi.ForeColor = System.Drawing.Color.White
-        Me.lblVersi.Location = New System.Drawing.Point(14, 378)
+        Me.lblVersi.Location = New System.Drawing.Point(22, 245)
         Me.lblVersi.Name = "lblVersi"
         Me.lblVersi.Size = New System.Drawing.Size(187, 35)
         Me.lblVersi.TabIndex = 50
@@ -139,7 +139,7 @@ Partial Class FrmAcerca
         Me.btntxt.BackColor = System.Drawing.Color.Moccasin
         Me.btntxt.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btntxt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntxt.Location = New System.Drawing.Point(198, 580)
+        Me.btntxt.Location = New System.Drawing.Point(18, 354)
         Me.btntxt.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.btntxt.Name = "btntxt"
         Me.btntxt.Size = New System.Drawing.Size(114, 35)
@@ -149,10 +149,10 @@ Partial Class FrmAcerca
         '
         'dtpFecha
         '
-        Me.dtpFecha.Location = New System.Drawing.Point(220, 305)
+        Me.dtpFecha.Location = New System.Drawing.Point(215, 189)
         Me.dtpFecha.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.dtpFecha.Name = "dtpFecha"
-        Me.dtpFecha.Size = New System.Drawing.Size(233, 29)
+        Me.dtpFecha.Size = New System.Drawing.Size(233, 25)
         Me.dtpFecha.TabIndex = 61
         '
         'lblNomb2
@@ -166,10 +166,10 @@ Partial Class FrmAcerca
         '
         'FrmAcerca
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSalmon
-        Me.ClientSize = New System.Drawing.Size(801, 725)
+        Me.ClientSize = New System.Drawing.Size(768, 414)
         Me.Controls.Add(Me.dtpFecha)
         Me.Controls.Add(Me.btntxt)
         Me.Controls.Add(Me.lblNomb2)
@@ -185,6 +185,7 @@ Partial Class FrmAcerca
         Me.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Name = "FrmAcerca"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Acerca de"
         Me.ResumeLayout(False)
         Me.PerformLayout()

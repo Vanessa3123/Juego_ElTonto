@@ -71,6 +71,7 @@
     <Compile Include="ClaseNivelintermedio.vb" />
     <Compile Include="Clase_Jugar.vb" />
     <Compile Include="Clase_LlamarTXT.vb" />
+    <Compile Include="llamadaTXT.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

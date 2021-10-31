@@ -2,7 +2,6 @@
 Public Class FrmAcerca
     Dim comprobar As Boolean = False
     Dim iEntidaes As New Entidades.Propirdades
-    Dim total As Decimal
     Dim comprobartxt As Boolean
     Private Sub FrmAcerca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
