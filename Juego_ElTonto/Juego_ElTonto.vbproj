@@ -103,6 +103,12 @@
     <Compile Include="frmInstrucciones.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMejores_Tiempos.Designer.vb">
+      <DependentUpon>frmMejores_Tiempos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMejores_Tiempos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMenuPrincipal.designer.vb">
       <DependentUpon>FrmMenuPrincipal.vb</DependentUpon>
     </Compile>
@@ -148,6 +154,9 @@
     <EmbeddedResource Include="frmInstrucciones.resx">
       <DependentUpon>frmInstrucciones.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMejores_Tiempos.resx">
+      <DependentUpon>frmMejores_Tiempos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.vb</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\a 0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D_NQ_NP_711752-MLA44377760961_122020-V.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

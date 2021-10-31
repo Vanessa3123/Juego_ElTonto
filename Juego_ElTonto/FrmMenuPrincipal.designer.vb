@@ -66,13 +66,13 @@ Partial Class FrmMenuPrincipal
         'RegistroToolStripMenuItem
         '
         Me.RegistroToolStripMenuItem.Name = "RegistroToolStripMenuItem"
-        Me.RegistroToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
+        Me.RegistroToolStripMenuItem.Size = New System.Drawing.Size(172, 24)
         Me.RegistroToolStripMenuItem.Text = "Registro e Inicio"
         '
         'MejoresTiemposToolStripMenuItem
         '
         Me.MejoresTiemposToolStripMenuItem.Name = "MejoresTiemposToolStripMenuItem"
-        Me.MejoresTiemposToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
+        Me.MejoresTiemposToolStripMenuItem.Size = New System.Drawing.Size(172, 24)
         Me.MejoresTiemposToolStripMenuItem.Text = "Mejores Tiempos"
         '
         'ConfiguracionToolStripMenuItem
@@ -102,11 +102,13 @@ Partial Class FrmMenuPrincipal
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BackgroundImage = Global.Juego_ElTonto.My.Resources.Resources.D_NQ_NP_711752_MLA44377760961_122020_V
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(1015, 725)
         Me.ControlBox = False
         Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Name = "FrmMenuPrincipal"
